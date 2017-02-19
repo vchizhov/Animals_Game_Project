@@ -1,0 +1,10 @@
+;no lies:
+;example1 |C|>0, (car c) == x => (main T)->no->yes
+;example2 |C|>0, (car c) != x, x<-C => (main T)->yes->yes->no->parrot
+;example3 |C|>0, (car c) != x, {x}C={}, x<-A => (main T)->yes->yes->no->penguin
+;example4 |C|>0, (car c) != x, {x}C={}, {x}A={} => (main T)->yes->yes->no->ostrich
+;example5 C={}, x<-A => (main T)->yes->no->penguin
+;example6 C={}, {x}A={} => (main T)->yes->no->ostrich
+;with lies:
+;example7 |C|>0, (car c) != x, {x}C={}, x<-A => (main T)->no->no->parrot
+;example8 C={}, x<-A => (main T)->yes->no->drake
